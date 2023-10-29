@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 38.5%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: darkred;
+  padding: 0px;
+  
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 61.5%;
+  background-color: purple;
+  height: 400px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+
+/* Style the "Click here for next page" link in the footer */
+footer a:link,
+footer a:visited {
+  color: white; /* Set the text color to white for both visited and unvisited links */
+  text-decoration: none; /* Remove underlining from the link */
+}
+
+
+
+	
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2> <img src="https://cdncloudcart.com/14817/files/image/mbt-logo-dark-png.png" height = 80px ></h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <iframe width="980" height="384" src="https://www.youtube.com/embed/P5s-l6eLh5Q?si=KznoxWXGyySa8ZYv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>MBT - INTRO</h1>
+    <p>МБТ напрай' хит на тоа' бийт (МБТ)</p>
+    <p>Аз ти плащам ти ми носиш и сме квит (плащам)</p>
+     <p>Кеша лепи ни се като на магнит (кеш)</p>
+      <p>Joint-a свит кашлям като от бронхит</p>
+       <p>Първа вечер си покаа' потенциала скрит</p>
+        <p>! Чуй цялата песен в линка отляво !</p>
+      
+  </article>
+</section>
+
+<footer>
+
+  <a href="contact.html">Click here for next page</a>
+</footer>
+<section>
+  <nav>
+    <ul>
+    <iframe width="980" height="384" src="https://www.youtube.com/embed/hBz9IoQwmJQ?si=ER12GT2C_wekzDK6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>MBT - Oboroti</h1>
+   <p>Тия типове модерните, за двигателите атмосферните</p>
+    <p>Забавленията от вечерните, в джоба mastercard от черните</p>
+     <p>Тук са крими инжинерите. (крими)</p>
+      <p>И за нас работат куриерите</p>
+       <p>Финансираме дори банкеритеp<p>
+	 <p> От нас купуват акции, акционерите<p>
+        <p>! Чуй цялата песен в линка отляво !</p>
+  </article>
+</section>
+
+</body>
+</html>
+
